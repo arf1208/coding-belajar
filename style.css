@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Lirik Sinkronisasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="karaoke-container">
+        <audio id="audioPlayer" controls>
+            <source src="hindia.mp3" type="audio/mp3">
+            Browser Anda tidak mendukung elemen audio.
+        </audio>
+
+        <h2>Lirik Berjalan: Berdansalah di Atas Karir</h2>
+        
+        <div id="lyricsContainer" class="lyrics-display">
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
