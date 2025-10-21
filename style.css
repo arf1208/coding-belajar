@@ -1,23 +1,38 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <title>Lirik Sinkronisasi</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    text-align: center;
+    padding: 20px;
+}
 
-    <div class="karaoke-container">
-        <audio id="audioPlayer" controls>
-            <source src="hindia.mp3" type="audio/mp3">
-            Browser Anda tidak mendukung elemen audio.
-        </audio>
+.karaoke-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-        <h2>Lirik Berjalan: Berdansalah di Atas Karir</h2>
-        
-        <div id="lyricsContainer" class="lyrics-display">
-            </div>
-    </div>
+.lyrics-display {
+    margin-top: 20px;
+    height: 150px; /* Batasi tinggi agar fokus pada baris yang sedang berjalan */
+    overflow-y: hidden;
+    padding: 10px;
+    line-height: 1.8;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+.lyric-line {
+    font-size: 1.2em;
+    color: #666;
+    transition: color 0.3s, font-weight 0.3s;
+    margin: 5px 0;
+}
+
+/* CLASS KHUSUS: Baris yang sedang dinyanyikan */
+.lyric-active {
+    color: #004d40; /* Warna hijau khas NU */
+    font-weight: bold;
+    font-size: 1.4em;
+    text-shadow: 0 0 5px rgba(0, 77, 64, 0.5);
+}
